@@ -1,0 +1,19 @@
+.header{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.avator{
+	background: url(https://s2.ax1x.com/2020/01/08/lgXELT.gif);
+	width: 120px;
+	height: 120px;
+	border-radius: 35%;
+}
+.name{
+
+}
+.navi{
+	display: flex;
+}
+.navi-item
