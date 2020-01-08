@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, Switch, Route } from 'react-router-dom';
+import About from '../about/about'
 
 export default class Home extends React.Component{
   render(){
