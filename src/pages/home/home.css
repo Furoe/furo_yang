@@ -5,20 +5,24 @@
 	align-items: center;
 }
 .avator{
+	margin-top: 30px;
 	background: url(https://s2.ax1x.com/2020/01/08/lgXELT.gif);
 	background-size: 100%;
+	background-repeat: no-repeat;
 	width: 120px;
 	height: 120px;
 	border-radius: 35%;
 }
 .name{
-
+	font-size: 18px;
+	font-weight: bold;
+	color: #426396;
 }
 .navi{
 	display: flex;
 }
 .navi .navi-item{
-	color: #eee;
+	color: black;
 	text-decoration: none;
 	border: 1px solid #222;
 	padding: 5px 10px;
@@ -29,7 +33,7 @@
 .navi .navi-item:hover{
 	background-color: black;
 	color: white;
-	font-weight: bold;;
+	font-weight: bold;
 }
 .content{
 	width: 960px;
