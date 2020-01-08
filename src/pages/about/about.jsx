@@ -1,5 +1,5 @@
 import React from 'react';
-import { md } from '../../../mdParser';
+import { md } from '../../utils/mdParser';
 
 const about = `
 # 关于我
