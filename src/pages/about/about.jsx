@@ -1,5 +1,5 @@
 import React from 'react';
-import { md } from '../../mdParser';
+import { md } from '../../../mdParser';
 
 const about = `
 # 关于我
@@ -12,7 +12,7 @@ const about = `
 大一学过C，大二学过C++，java写过简单聊天室，python会一些，主要使用JS。（目前想纠正学而不精的毛病）
 `;
 
-export default class About from React.Component{
+export default class About extends React.Component{
 	render(){
 		return (
 			<div className='about-container'>
