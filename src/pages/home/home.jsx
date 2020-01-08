@@ -15,7 +15,6 @@ export default class Home extends React.Component{
             <Link to={'/'} className='navi-item'>首页</Link>
             <Link to={'/about'} className='navi-item'>关于</Link>
           </div>
-	        <Clock />
         </div>
         <div className='content'>
           <Switch>
