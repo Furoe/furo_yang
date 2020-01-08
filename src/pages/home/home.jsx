@@ -17,16 +17,16 @@ export default class Home extends React.Component{
           </div>
 	        <Clock />
         </div>
-      </div>
-      <div className='content'>
-        <Switch>
-          <Route path={'/'}>
-            <Home></Home>
-          </Route>
-          <Route path={'/about'}>
-            <About></About>
-          </Route>
-        </Switch>
+        <div className='content'>
+          <Switch>
+            <Route path={'/'}>
+              <Home></Home>
+            </Route>
+            <Route path={'/about'}>
+              <About></About>
+            </Route>
+          </Switch>
+        </div>
       </div>
     );
   }
