@@ -1,4 +1,5 @@
 import React from 'react';
+import './home.css';
 import { Link, Switch, Route } from 'react-router-dom';
 import { Clock } from '../../component/clock';
 import About from '../about/about';
@@ -16,6 +17,16 @@ export default class Home extends React.Component{
           </div>
 	        <Clock />
         </div>
+      </div>
+      <div className='content'>
+        <Switch>
+          <Route path={'/'}>
+            <Home></Home>
+          </Route>
+          <Route path={'/about'}>
+            <About></About>
+          </Route>
+        </Switch>
       </div>
     );
   }
