@@ -6,6 +6,7 @@
 }
 .avator{
 	background: url(https://s2.ax1x.com/2020/01/08/lgXELT.gif);
+	background-size: 100%;
 	width: 120px;
 	height: 120px;
 	border-radius: 35%;
@@ -15,4 +16,29 @@
 }
 .navi{
 	display: flex;
+}
+.navi .navi-item{
+	color: #eee;
+	text-decoration: none;
+	border: 1px solid #222;
+	padding: 5px 10px;
+	border-radius: 5px;
+	margin: 10px;
+	transition: all 0.3s;
+}
+.navi .navi-item:hover{
+	background-color: black;
+	color: white;
+	font-weight: bold;;
+}
+.content{
+	width: 960px;
+	margin: 0 auto;
+}
+@media screen and (max-width: 960px){
+	.content{
+		width: 380px;
+		padding: 20px;
+		box-sizing: border-box;;
+	}
 }
