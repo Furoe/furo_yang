@@ -32,7 +32,7 @@ export class ImMdParse extends React.Component{
 	}
 }
 
-export class MdImmParse extends React.Component{
+export default class MdImmParse extends React.Component{
 	constructor(props){
 		super(props);
 		this.handleMdChange = this.handleMdChange.bind(this);
@@ -49,9 +49,9 @@ export class MdImmParse extends React.Component{
 
 		return (
 			<div>
-			<MarkdownText onMarkdownChange={this.handleMdChange} />
-			<ImMdParse innerContent={innerContent} />
-		</div>
+				<MarkdownText onMarkdownChange={this.handleMdChange} />
+				<ImMdParse innerContent={innerContent} />
+			</div>
 		);
 		
 	}

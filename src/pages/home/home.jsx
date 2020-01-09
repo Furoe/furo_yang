@@ -3,7 +3,7 @@ import './home.css';
 import { Link, Switch, Route } from 'react-router-dom';
 import { Clock } from '../../component/clock';
 import About from '../about/about';
-import { MdImmParse } from './pages/onlineEdit/onlineEdit';
+import MdImmParse, { MarkdownText } from './pages/onlineEdit/onlineEdit';
 
 export default class Home extends React.Component{
   render(){
