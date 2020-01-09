@@ -13,7 +13,7 @@ export class MarkdownText extends React.Component{
 
 	render(){
 		return (
-			<textArea value={this.props.innerContent} onchange={this.handleChange}></textArea>
+			<textArea value={this.props.innerContent} onChange={this.handleChange}></textArea>
 		);
 	}
 }
