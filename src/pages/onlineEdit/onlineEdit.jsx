@@ -1,4 +1,5 @@
 import React from 'react';
+import './onlineEdit.css';
 import { md } from '../../utils/mdParser';
 
 export class MarkdownText extends React.Component{
@@ -13,7 +14,7 @@ export class MarkdownText extends React.Component{
 
 	render(){
 		return (
-			<textArea value={this.props.innerContent} onChange={this.handleChange}></textArea>
+			<textarea className='mdContent' value={this.props.innerContent} onChange={this.handleChange}></textarea>
 		);
 	}
 }
@@ -25,7 +26,7 @@ export class ImMdParse extends React.Component{
 
 	render(){
 		return (
-			<div>
+			<div className='innerContent'>
 				<div dangerouslySetInnerHTML={{ __html: this.props.innerContent }}></div>
 			</div>
 		);
@@ -48,7 +49,7 @@ export default class MdImmParse extends React.Component{
 		const innerContent = md.render(mdContent);
 
 		return (
-			<div>
+			<div className='mdEditContent'>
 				<MarkdownText onMarkdownChange={this.handleMdChange} />
 				<ImMdParse innerContent={innerContent} />
 			</div>

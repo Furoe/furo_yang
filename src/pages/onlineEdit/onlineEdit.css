@@ -1,0 +1,15 @@
+.mdEditContent{
+	display: flex;
+	flex-direction: row;
+
+}
+.mdContent{
+	width: 50%;
+	height: 484px;
+}
+.innerContent{
+	padding: 10px;
+    width: calc(50% - 20px);
+    word-break: break-all;
+    word-wrap: break-word;
+}
