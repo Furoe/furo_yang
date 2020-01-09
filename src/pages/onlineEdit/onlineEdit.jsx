@@ -34,7 +34,7 @@ export class ImMdParse extends React.Component{
 
 export class MdImmParse extends React.Component{
 	constructor(props){
-		super(porps);
+		super(props);
 		this.handleMdChange = this.handleMdChange.bind(this);
 		this.state = {mdContent: ''};
 	}
