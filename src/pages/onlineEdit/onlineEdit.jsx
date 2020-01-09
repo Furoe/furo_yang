@@ -46,9 +46,13 @@ export class MdImmParse extends React.Component{
 	render(){
 		const mdContent = this.state.mdContent;
 		const innerContent = md.render(mdContent);
-		<div>
+
+		return (
+			<div>
 			<MarkdownText onMarkdownChange={this.handleMdChange} />
 			<ImMdParse innerContent={innerContent} />
 		</div>
+		);
+		
 	}
 }
