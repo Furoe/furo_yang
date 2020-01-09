@@ -3,6 +3,7 @@ import './home.css';
 import { Link, Switch, Route } from 'react-router-dom';
 import { Clock } from '../../component/clock';
 import About from '../about/about';
+import { MdImmParse } from './pages/onlineEdit/onlineEdit';
 
 export default class Home extends React.Component{
   render(){
@@ -14,12 +15,16 @@ export default class Home extends React.Component{
           <div className='navi'>
             <Link to={'/'} className='navi-item'>首页</Link>
             <Link to={'/about'} className='navi-item'>关于</Link>
+            <Link to={'/onlineEdit'} className='navi-item'>在线编辑</Link>
           </div>
         </div>
         <div className='content'>
           <Switch>
             <Route path={'/about'}>
               <About></About>
+            </Route>
+            <Route path='/onlineEdit'>
+              <MdImmParse></MdImmParse>
             </Route>
           </Switch>
         </div>
