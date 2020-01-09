@@ -15,7 +15,6 @@ export default class Home extends React.Component{
           <div className='navi'>
             <Link to={'/'} className='navi-item'>首页</Link>
             <Link to={'/about'} className='navi-item'>关于</Link>
-            <Link to={'/onlineEdit'} className='navi-item'>在线编辑</Link>
           </div>
         </div>
         <div className='content'>
