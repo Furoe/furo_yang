@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Switch,
 } from 'react-router-dom';
 import Home from './pages/home/home';
-import { MdImmParse } from './pages/onlineEdit/onlineEdit';
+import MdImmParse from './pages/onlineEdit/onlineEdit';
 import About from './pages/about/about';
 import logo from './logo.svg';
 import './App.css';
